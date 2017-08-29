@@ -14,4 +14,11 @@
 ## Ejercicio de botones
 - Al crear un elemento y personalizarlo se puede guardar el estilo que tiene para aplicarlo posteriorimente a otros elementos.
 - En el ejercicio, al guardar el estilo, las dimensiones del botón no quedan guardadas. Como apaño, se han ajustado los paddings del botón con el texto, de forma que al crear un nuevo botón y ajustar el tamaño de la caja al texto, el padding hará que tena el tamaño que tenga que tener.
-- Para un *hover* y un *click*, lo conveniento es crear cada estilo por separado, y luego, en el botón con el estilo originla, vas a la pestaña Properties, y en **Interaction Styes** se puede cambiar el estilo para cada interacción.
+- Para un *hover* y un *click*, lo conveniento es crear cada estilo por separado, y luego, en el botón con el estilo original, vas a la pestaña Properties, y en **Interaction Styes** se puede cambiar el estilo para cada interacción.
+
+## Ejercicio Tooltips
+- Se pueden importar librerías para utilizar sus componentes en el proyecto. Se pueden descargar desde la página oficial de Axure. Se descarga y se cargan una vez descargadas haciendo clic en el icono de *hamburger* del panel **Libraries**.
+- Se pueden ocultar elementos durante la edición desde el panel *Outline*, pero para ocultar elementos en la interacción se usa el atributo **Hidden**, disponible en la pestaña Properties.
+- Una **interacción** se compone por un evento (el desencadenante), casos (el contexto) y un efecto.
+- Para definir una interacción, en la pestaña de Properties están listados los eventos por defecto y pueden añadirse más. En la ventana emergente, se selecciona la acción, el objeto y los elementos que lo componen (pueden ocultarse grupos enteros o no, por ejemplo).
+- Utilizando **hotspots** se pueden crear zonas pulsables del tamaño necesario. 
