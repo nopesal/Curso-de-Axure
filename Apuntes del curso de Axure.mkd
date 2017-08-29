@@ -1,0 +1,17 @@
+# Apuntes del curso de Axure
+
+## El programa
+- En Axure todo funciona con widgets.
+- Existen varias librerías de widgets, pinchas y arrastras al lienzo.
+- Para insertar una imagen se usa Image, no Placeholder.
+- El **Inspector** es lo que sirve para cambiar el estilo de los elelmentos, y cuando no hay nada seleccionado se cambia el estilo del propio lienzo.
+- En el panel **Outline** aparecen los widgets del lienzo, son como las capas del Photoshop. Como consejo, conviene nombrar los elementos que aparecen aquí, por ejemplo, *h1_formulario*.
+- En el panel **Masters** se pueden ver elementos guardados para reutilizarlos cuando se necesite, a modo de Símbolos.
+
+## Ejercicio de formulario
+- El **Submit Button** sirve para desencadenar una validación de un formulario, por ejemplo. Se deben linkear el resto de elementos al submit en la pestaña de Properties.
+
+## Ejercicio de botones
+- Al crear un elemento y personalizarlo se puede guardar el estilo que tiene para aplicarlo posteriorimente a otros elementos.
+- En el ejercicio, al guardar el estilo, las dimensiones del botón no quedan guardadas. Como apaño, se han ajustado los paddings del botón con el texto, de forma que al crear un nuevo botón y ajustar el tamaño de la caja al texto, el padding hará que tena el tamaño que tenga que tener.
+- Para un *hover* y un *click*, lo conveniento es crear cada estilo por separado, y luego, en el botón con el estilo originla, vas a la pestaña Properties, y en **Interaction Styes** se puede cambiar el estilo para cada interacción.
