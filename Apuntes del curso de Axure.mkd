@@ -32,3 +32,11 @@
 - Para crear un panel dinámico se hace clic derecho sobre un elemento y se selecciona *Convert to Dynamic Panel*.
 - Cada panel dinámico tiene un contenido y se abre en una página de Axure aparte. Es **importante** que los elementos estén ubicado sen el ordigen de los ejes de coordenadas (x=0, y=0).
 - En la configuración del evento se debe selecciona *Set Panel State* como la acción a realizar por la interacción. Indicando *Next* irá de panel en panel sin rotar. Para crear un bucle debe seleccionarse *Wrap from last to first*.
+
+## Ejercicio del switch y pestañas
+- Hay que intentar que los paneles dinámicos tengan el mismo alto y ancho que el contenido que incluyen.
+- Para hacer un switch (interruptor), se crea un panel dinámico con dos estados (ON/OFF), de forma que cuando se haga clic en uno, se cambie el estado del panel al estado correspondiente.
+- El estado de un panel dinámico puede cambiarse al siguiente (con *Next*), o asignarle directamente un estado en concreto.
+- Para hacer pestañas, se crea un panel dinámico con tantos estados como pestañas haya, de forma que las pestañas cambien el estado del panel al que corresponda. Se debería poner un estilo seleccionado a las pestañas al hacer clic en ellas, es decir, al asignar un estilo *Selected*, pero este estilo no se verá a menos que el elemento esté seleccionado. Para que el elemento quede seleccionado, hay que asignar una acción en *onClick* para activar o desactivar el atributo *Selected*. Además, hay que indicar a Axure que sólo una de las pestañas puede estar seleccionada a la vez. Para ello se configura el atributo *Selection Group* de cada pestaña.
+- Si se desea mostrar como seleccionada una pestaña por defecto, el evento *onPageLoad* activa acciones al cargar la página.
+- Para copiar el estilo de un elemento a otros elementos, se usa la herramienta **Painter**, ubicada en el menú *More* en la barra de herramientas superior. Es posible copiar además los estilos que tiene los *MouseOver* y *Selected*.  
