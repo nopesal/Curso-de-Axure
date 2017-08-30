@@ -51,9 +51,13 @@ Estos son apuntes de un curso de Axure RP 8. Ha sido un curso práctico, por lo 
 
 ## Ejercicio de sitemap
 - Existe una librería incluida por defecto llamada **Flow**, la cual permite dibujar diagramas de flujo, los cuales son muy útiles a la hora de documentar los prototipos, con la posibilidad de enlazar a las páginas creadas.
-- Hay que indicar que la página es de tipo *Flow*, haciendo clic derecho sobre ella en el panel *Pages* y seleccionando *Dyagram Type*. 
+- Hay que indicar que la página es de tipo *Flow*, haciendo clic derecho sobre ella en el panel *Pages* y seleccionando *Dyagram Type*.
 - Para dibujar el diagrama de flujo, se insertan elementos de la librería en el lienzo y se conectan con la herramienta **Connect** ubicada en la barra de herramientas superior.
 - Se puede utilizar el atributo *Reference Page* de los elementos del diagrama para referenciar las páginas que se correspondan con el árbol.
 - Para llevar a otra página al ocurrir un evento, se utiliza la acción **Open Link**.
 - Para crear un elemento permanente en cuanto a su posición en la página, por ejemplo una cabecera, es necesario convertir el elemento en un panel dinámico. Después, se configura el atributo **Pin to Browser** para especificar la ubicacion deseada del elemento. Si se convierte el elemento en un *Master*, se puede especificar que esté fija su posición siempre en la página en la que se inserte, es decir, que no se puede soltar en el lienzo libremente, se autocoloca.
 - Otra cosa muy útil a la hora de documentar son las notas, las cuales están en el panel *Inspector*, bajo la pestaña *Notes* del elemento seleccionado.
+
+## Prototipos en versión móvil
+- Existen al parecer plantillas con mockups de móviles, pero Axure no proporciona un mockup de un móvil como opción, hay que meterlo a mano y encajar el lienzo sobre la pantalla del mockup.
+- A la hora de compartir un enlace a un prototipo móvil, es conveniente guardar la página en la pantalla de inciio del móvil, para que esta se abra como una web app y no contenga la interfaz del navegador, sino el prototipo a pantalla completa. 
