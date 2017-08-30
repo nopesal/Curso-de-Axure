@@ -1,4 +1,5 @@
 # Apuntes del curso de Axure
+Estos son apuntes de un curso de Axure RP 8. Ha sido un curso práctico, por lo que los apuntes están divididos en ejercicios, los cuales pueden verse en el archivo *Ejercicio Axure.rp* ubicado en este repositorio.
 
 ## El programa
 - En Axure todo funciona con widgets.
@@ -19,16 +20,18 @@
 ## Ejercicio de tooltips
 - Se pueden importar librerías para utilizar sus componentes en el proyecto. Se pueden descargar desde la página oficial de Axure. Se descarga y se cargan una vez descargadas haciendo clic en el icono de *hamburger* del panel **Libraries**.
 - Se pueden ocultar elementos durante la edición desde el panel *Outline*, pero para ocultar elementos en la interacción se usa el atributo **Hidden**, disponible en la pestaña Properties.
-- Una **interacción** se compone por un evento (el desencadenante), casos (el contexto) y un efecto. Ver este enlace https://www.axure.com/support/reference/interactions para la lista de eventos de interacción.
-- Para definir una interacción, en la pestaña de Properties están listados los eventos por defecto y pueden añadirse más. En la ventana emergente, se selecciona la acción, el objeto y los elementos que lo componen (pueden ocultarse grupos enteros o no, por ejemplo).
+> Una **interacción** se compone por un evento (el desencadenante), casos (el contexto) y un efecto. Ver [Lista de eventos de interacción](https://www.axure.com/support/reference/interactions) para la lista de eventos de interacción.
+
+- Para definir una interacción, en la pestaña de *Properties* están listados los eventos por defecto y pueden añadirse más. En la ventana emergente, se selecciona la acción, el objeto y los elementos que lo componen (pueden ocultarse grupos enteros o no, por ejemplo).
 - Utilizando **hotspots** se pueden crear zonas pulsables del tamaño necesario.
 
 ## Ejercicio de ventana modal
-- Para crear una ventana modal, se puede especificar un las opciones de la animación del evento onClick, **treat as lightbox**, que lo que hace es mostrar la ventana modal con el fondo oscuro, pudiendo incluso modificar el color del fondo.
+- Para crear una ventana modal, se puede especificar en las opciones de la animación del evento onClick, **treat as lightbox**, que lo que hace es mostrar la ventana modal con el fondo oscuro, pudiendo incluso modificar el color del fondo.
 - Para cerrar la ventana modal, con un aspa por ejemplo, se indica en la animación que se oculte el grupo de la ventana modal simplemente.
 
 ## Ejercicio de paneles dinámicos
-- Un **panel dinámico** es un elemento que cambia de estado tras una interacción, cuyos estados son como capas superpuestas en el mismo espacio, de forma que se ve la capa que más al frente esté ubicada.
+> Un **panel dinámico** es un elemento que cambia de estado tras una interacción, cuyos estados son como capas superpuestas en el mismo espacio, de forma que se ve la capa que más al frente esté ubicada.
+
 - Para crear un panel dinámico se hace clic derecho sobre un elemento y se selecciona *Convert to Dynamic Panel*.
 - Cada panel dinámico tiene un contenido y se abre en una página de Axure aparte. Es **importante** que los elementos estén ubicados en el origen de los ejes de coordenadas (x=0, y=0).
 - En la configuración del evento se debe selecciona *Set Panel State* como la acción a realizar por la interacción. Indicando *Next* irá de panel en panel sin rotar. Para crear un bucle debe seleccionarse *Wrap from last to first*.
@@ -41,3 +44,7 @@
 - Si se desea mostrar como seleccionada una pestaña por defecto, el evento *onPageLoad* activa acciones al cargar la página, pudiendo activar el atributo *Selected*. Si no, es más sencillo activar a mano el atributo en *Properties* del elemento.
 - Para copiar el estilo de un elemento a otros elementos, se usa la herramienta **Painter**, ubicada en el menú *More* en la barra de herramientas superior. Es posible copiar además los estilos que tiene los *MouseOver* y *Selected*.  
 - Para animar el contenido de las pestañas, por ejemplo, un deslizamiento lateral, se puede configurar en las opciones del evento *onClick* al cambiar el panel dinámico de estado.
+
+## Ejercicio de colapsables
+- Si se disponen de varios elementos con un estilo hover pero se quiere que el hover de todos los elementos reaccionen a la vez, se agrupan y se activa el atributo del grupo **Trigger Mouse Interaction Styles**.
+- Si se disponen de varios colapsables apilados, al expandirlos taparán los que estén ubicados por debajo. Existe una opción en la configuración del evento de interacción del panel dinámico llamada **Push/Pull Widgets**, que empuja los elementos que ocupen el espacio del panel dinámico.
