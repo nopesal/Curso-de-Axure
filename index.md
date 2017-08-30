@@ -72,3 +72,8 @@ Estos son apuntes de un curso de Axure RP 8. Ha sido un curso práctico, por lo 
 - En las propiedades del repeater se puede ajustar el número de filas. Las columnas sirven a modo de base de datos, de forma que para autorrellenar los campos del objeto repetido, en la configuración del evento *onItemLoad* se puede indicar que se rellenen los textos cogiendo los datos de las columnas previamente definidas.
 - Para insertar los valores de las columnas, en la configuración del evento se elige la acción *Set Text*, seleccionando el botón *FX*.
 - Los repeaters pueden ordenarse utilizando un *Drop List*, configurando el evento *onSelectionChange* con la acción *Repeaters - Add sort*. Debe añadirse una condición para comporbar que lo seleccionado se corresponde con la ordenación que se quiera.
+
+## Ejercicio con variables
+- Axure no tiene memoria. Si se realiza algo en una página, en el momento en que abandones esa página, el contenido que hayas cambiado y el estado en el que se encontrase se perderá. Las **variables** sirven para tratar estos casos. Pueden almacenar cualquier tipo de valor, ya sea número o texto.    
+- Se crea una variable en el menú de Axure *Project > Global Variables...*
+- Una variable puede asignarse al tratar un evento, seleccionando la acción *Set Variable*. Luego pueden utilizarse estas variables en los condicionales.
