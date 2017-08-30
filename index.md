@@ -7,7 +7,7 @@ Estos son apuntes de un curso de Axure RP 8. Ha sido un curso práctico, por lo 
 - Para insertar una imagen se usa Image, no Placeholder.
 - El **Inspector** es lo que sirve para cambiar el estilo de los elementos, y cuando no hay nada seleccionado se cambia el estilo del propio lienzo.
 - En el panel **Outline** aparecen los widgets del lienzo, son como las capas del Photoshop. Como consejo, conviene nombrar los elementos que aparecen aquí, por ejemplo, *h1_formulario*.
-- En el panel **Masters** se pueden ver elementos guardados para reutilizarlos cuando se necesite, a modo de Símbolos.
+- En el panel **Masters** se pueden ver elementos guardados para reutilizarlos cuando se necesite, a modo de Símbolos. Un cambio en un elemento Maestro afecta a todos las copias de ese elemento maestro del proyecto.
 
 ## Ejercicio de formulario
 - El **Submit Button** sirve para desencadenar una validación de un formulario, por ejemplo. Se deben enlazar el resto de elementos al submit en la pestaña de Properties.
@@ -48,3 +48,12 @@ Estos son apuntes de un curso de Axure RP 8. Ha sido un curso práctico, por lo 
 ## Ejercicio de colapsables
 - Si se disponen de varios elementos con un estilo hover pero se quiere que el hover de todos los elementos reaccionen a la vez, se agrupan y se activa el atributo del grupo **Trigger Mouse Interaction Styles**.
 - Si se disponen de varios colapsables apilados, al expandirlos taparán los que estén ubicados por debajo. Existe una opción en la configuración del evento de interacción del panel dinámico llamada **Push/Pull Widgets**, que empuja los elementos que ocupen el espacio del panel dinámico.
+
+## Ejercicio de sitemap
+- Existe una librería incluida por defecto llamada **Flow**, la cual permite dibujar diagramas de flujo, los cuales son muy útiles a la hora de documentar los prototipos, con la posibilidad de enlazar a las páginas creadas.
+- Hay que indicar que la página es de tipo *Flow*, haciendo clic derecho sobre ella en el panel *Pages* y seleccionando *Dyagram Type*. 
+- Para dibujar el diagrama de flujo, se insertan elementos de la librería en el lienzo y se conectan con la herramienta **Connect** ubicada en la barra de herramientas superior.
+- Se puede utilizar el atributo *Reference Page* de los elementos del diagrama para referenciar las páginas que se correspondan con el árbol.
+- Para llevar a otra página al ocurrir un evento, se utiliza la acción **Open Link**.
+- Para crear un elemento permanente en cuanto a su posición en la página, por ejemplo una cabecera, es necesario convertir el elemento en un panel dinámico. Después, se configura el atributo **Pin to Browser** para especificar la ubicacion deseada del elemento. Si se convierte el elemento en un *Master*, se puede especificar que esté fija su posición siempre en la página en la que se inserte, es decir, que no se puede soltar en el lienzo libremente, se autocoloca.
+- Otra cosa muy útil a la hora de documentar son las notas, las cuales están en el panel *Inspector*, bajo la pestaña *Notes* del elemento seleccionado.
