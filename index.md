@@ -60,4 +60,15 @@ Estos son apuntes de un curso de Axure RP 8. Ha sido un curso práctico, por lo 
 
 ## Prototipos en versión móvil
 - Existen al parecer plantillas con mockups de móviles, pero Axure no proporciona un mockup de un móvil como opción, hay que meterlo a mano y encajar el lienzo sobre la pantalla del mockup.
-- A la hora de compartir un enlace a un prototipo móvil, es conveniente guardar la página en la pantalla de inciio del móvil, para que esta se abra como una web app y no contenga la interfaz del navegador, sino el prototipo a pantalla completa. 
+- A la hora de compartir un enlace a un prototipo móvil, es conveniente guardar la página en la pantalla de inicio del móvil, para que esta se abra como una web app y no contenga la interfaz del navegador, sino el prototipo a pantalla completa.
+
+## Ejercicio con condicionales
+- En la configuración de los casos es posible añadir condicionales, que restringen aún más los casos.
+- Es posible definir el tipo de texto que se incluye en un input, por ejemplo, poner que acepte solamente números o que oculte los caracteres insertados para una contraseña.
+
+## Ejercicio con repeaters
+> Los **repeaters** permiten generar copias de un mismo objeto tantas veces como se requiera, de forma que editando uno de los campos del repeater, se editan todas sus copias. Pueden expandirse horizontal o verticalmente.
+
+- En las propiedades del repeater se puede ajustar el número de filas. Las columnas sirven a modo de base de datos, de forma que para autorrellenar los campos del objeto repetido, en la configuración del evento *onItemLoad* se puede indicar que se rellenen los textos cogiendo los datos de las columnas previamente definidas.
+- Para insertar los valores de las columnas, en la configuración del evento se elige la acción *Set Text*, seleccionando el botón *FX*.
+- Los repeaters pueden ordenarse utilizando un *Drop List*, configurando el evento *onSelectionChange* con la acción *Repeaters - Add sort*. Debe añadirse una condición para comporbar que lo seleccionado se corresponde con la ordenación que se quiera.
